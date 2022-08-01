@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>LandingPage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../landingPage/style.css" rel="stylesheet">
+        
+        
+    </head>
+    <body>
+        <div class="container">
+            <nav class="menu">
+                <div class="img_menu">
+                    <h1>MenuLandingPage</h1>
+                </div>
+                <ul class="lista_menu">
+                    <li class="item_menu"><a href="../landingPage/index.html">Home</a></li>
+                    <li class="item_menu"><a href="https://github.com/fulanodetal">Portifólio GitHub</a></li>
+                    <li class="item_menu"><a href="#rodape">Contatos</a></li>
+                </ul>
+            </nav>
+
+            <section class="texto">
+                <div class="info">
+                    <h3>Sobre Mim</h3>
+                    <h6></h6>
+                    <p>Desenvolvedor Web, com conhecimento sólido em Html, <br>
+                    Css, JavaScript e Mysql. <br>
+                    </p>
+                    <br>
+                    <h2>Nosso Portifólio</h2>
+                    <p><a class="info_link" href="https://github.com/fulanodetal">GitHub</a></p>
+                    <p><a class="info_link" href="../landingPage//files/curriculotest.png">Curriculum</a></p>
+                </div>
+
+                <div class="img_info">
+                    <img src="imagem/developer.png">
+                </div>
+            </section>
+
+            <footer id="rodape">
+                <div class="icone_git">
+                    <a href="https://github.com/fulanodetal"><img class="img_git" src="../landingPage//icones/git2.png" title="Nosso GitHub!"></a>
+                </div>
+                <!--<div class="info_rodape">
+                    <p><a href="https://github.com/fulanodetal">https://github.com/fulanodetal</a></p>
+                </div>-->
+
+                <div class="icone_what">
+                    <a href="https://api.whatsapp.com/send?phone=5585999880000"><img class="img_git" src="../landingPage//icones/whatblack.png" title="Nosso Whatsapp!"></a>
+                    </div>
+                   <!-- <div class="info_rodape">
+                        <p><a href="https://api.whatsapp.com/send?phone=5585999880000">(85)99988-0000</a></p>
+                    </div>-->
+
+                    <div class="icone_email">
+                        <a href="mailto:fulanodetal@hotmail.com"><img class="img_git" src="../landingPage//icones/emailblack.png" title="Nosso Email!"></a>
+                    </div>
+                    <!--<div class="info_rodape">
+                        <p><a href="mailto:fulanodetal@hotmail.com">fulanodetal@hotmail.com</a></p>
+                    </div>-->
+
+                    <div class="icone_link">
+                        <a href="https://linkedin.com/fulanodetal"><img class="img_git" src="../landingPage//icones/link.png" title="Nosso LinkedIn!"></a>
+                    </div>
+
+                    <div class="icone_insta">
+                        <a href="https://instagram.com/fulanodetal"><img class="img_git" src="../landingPage//icones/insta.png" title="Nosso Instagram!"></a>
+                    </div>
+
+                    
+
+                    <div class="cor_layout">
+                        <h2 class="text_cor">Escolha a cor do Layout!</h2>
+                        <button class="azul" value="azul" id="azul"></button>
+                        <button class="roxo" value="roxo" id="roxo"></button>
+                        <button class="vermelho" value="vermelho" id="vermelho"></button>
+                    </div>
+            </footer>
+        </div>
+        <script>
+             document.getElementById("azul").addEventListener("click", function(){
+            document.querySelector("body").setAttribute("class", "azul");
+            })
+
+            document.getElementById("roxo").addEventListener("click", function(){
+            document.querySelector("body").setAttribute("class", "roxo");
+            })
+
+            document.getElementById("vermelho").addEventListener("click", function(){
+            document.querySelector("body").setAttribute("class", "vermelho");
+            })
+        </script>
+        
+    </body>
+</html>
